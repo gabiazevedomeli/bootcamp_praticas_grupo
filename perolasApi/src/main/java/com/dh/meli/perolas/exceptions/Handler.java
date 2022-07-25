@@ -10,13 +10,35 @@ import java.time.LocalDateTime;
 @ControllerAdvice
 public class Handler {
     @ExceptionHandler(JewelNotFoundException.class)
-    public ResponseEntity<ExceptionDetails> handlerUserNotFound(JewelNotFoundException ex) {
+    public ResponseEntity<ExceptionDetails> handlerJewelNotFound(JewelNotFoundException ex) {
         return new ResponseEntity<>(
                 ExceptionDetails.builder()
                         .title(ex.getMessage())
                         .timestamp(LocalDateTime.now())
                         .build(),
                 HttpStatus.NOT_FOUND
+        );
+    }
+
+    @ExceptionHandler(JewelBadRequestException.class)
+    public ResponseEntity<ExceptionDetails> handlerJewelBadRequest(JewelBadRequestException ex) {
+        return new ResponseEntity<>(
+                ExceptionDetails.builder()
+                    .title(ex.getMessage())
+                    .timestamp(LocalDateTime.now())
+                    .build(),
+                HttpStatus.BAD_REQUEST
+        );
+    }
+
+    @ExceptionHandler(InternalServerError.class)
+    public ResponseEntity<ExceptionDetails> handlerInternalServerError(InternalServerError ex) {
+        return new ResponseEntity<>(
+                ExceptionDetails.builder()
+                        .title(ex.getMessage())
+                        .timestamp(LocalDateTime.now())
+                        .build(),
+                    HttpStatus.INTERNAL_SERVER_ERROR
         );
     }
 }

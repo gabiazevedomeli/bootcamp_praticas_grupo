@@ -26,7 +26,11 @@ public class JewelDBService implements InterfaceJewelDBService {
 
     @Override
     public JewelDB createNewJewel(JewelDB newJewel) {
-        if (newJewel.getId() != 0) return null;
+//        if (newJewel.getId() > 0) {
+//            throw new JewelBadRequestException("The Jewel cannot have id for insert");
+//        }
+        System.out.println(newJewel);
+        System.out.println("Service");
         return jewelRepo.save(newJewel);
     }
 

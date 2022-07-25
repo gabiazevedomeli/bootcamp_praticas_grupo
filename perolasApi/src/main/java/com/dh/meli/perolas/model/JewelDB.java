@@ -1,6 +1,5 @@
 package com.dh.meli.perolas.model;
 
-import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -9,7 +8,6 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotEmpty;
 
 @Getter @Setter
-@Data
 @Entity
 @Table(name = "tb_jewel")
 public class JewelDB {

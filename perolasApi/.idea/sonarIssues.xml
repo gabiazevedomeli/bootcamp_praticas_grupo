@@ -33,12 +33,27 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/dh/meli/perolas/exceptions/InternalServerError.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/dh/meli/perolas/exceptions/JewelBadRequestException.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/dh/meli/perolas/exceptions/JewelNotFoundException.java">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/dh/meli/perolas/exceptions/NotFoundJewelException.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/dh/meli/perolas/exceptions/ServerInternalError.java">
           <value>
             <set />
           </value>
