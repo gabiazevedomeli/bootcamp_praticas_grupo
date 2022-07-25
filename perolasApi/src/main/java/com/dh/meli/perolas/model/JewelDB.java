@@ -5,7 +5,7 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 
 @Getter @Setter
 @Entity
@@ -19,11 +19,11 @@ public class JewelDB {
     @Column(name = "material", length = 80, nullable = false)
     private String material;
 
-    @NotEmpty(message = "Weight must to be specified.")
+    @NotNull(message = "Weight must to be specified.")
     @Column(name = "weight", scale = 2, nullable = false)
     private Double weight;
 
-    @NotEmpty(message = "Carats must to be specified.")
+    @NotNull(message = "Carats must to be specified.")
     @Column(name = "carats", nullable = false)
     private Integer carats;
 }
