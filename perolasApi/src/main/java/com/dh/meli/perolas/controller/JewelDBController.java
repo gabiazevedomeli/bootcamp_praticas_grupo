@@ -1,7 +1,7 @@
 package com.dh.meli.perolas.controller;
 
-import com.dh.meli.perolas.model.JewelDB;
-import com.dh.meli.perolas.service.JewelDBService;
+import com.dh.meli.perolas.model.Produto;
+import com.dh.meli.perolas.service.ProdutoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -16,29 +16,28 @@ import java.util.List;
 public class JewelDBController {
 
     @Autowired
-    private JewelDBService jewelService;
+    private ProdutoService produtoService;
 
     @GetMapping("/{id}")
-    public ResponseEntity<JewelDB> getJewelById(@PathVariable Long id) {
-        return ResponseEntity.ok(jewelService.getJewelById(id));
+    public ResponseEntity<Produto> getJewelById(@PathVariable Long id) {
+        return ResponseEntity.ok(produtoService.getProdutoById(id));
     }
 
     @PostMapping
-    public ResponseEntity<JewelDB> createNewJewel(@RequestBody @Valid JewelDB newJewel) {
+    public ResponseEntity<Produto> createNewJewel(@RequestBody @Valid Produto newJewel) {
         System.out.println(newJewel);
         System.out.println("Controller");
-        return ResponseEntity.status(HttpStatus.CREATED).body(jewelService.createNewJewel(newJewel));
+        return ResponseEntity.status(HttpStatus.CREATED).body(produtoService.criarProduto(newJewel));
     }
 
-    // rota funciona
     @GetMapping
-    public ResponseEntity<List<JewelDB>> getAllJewels() {
-        return ResponseEntity.ok(jewelService.getAllJewels());
+    public ResponseEntity<List<Produto>> getAllJewels() {
+        return ResponseEntity.ok(produtoService.getTodosProdutos());
     }
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteJewel(@PathVariable Long id) {
-        JewelDB jewelFound = jewelService.getJewelById(id);
+        Produto jewelFound = produtoService.getProdutoById(id);
         return ResponseEntity.notFound().build();
     }
 }

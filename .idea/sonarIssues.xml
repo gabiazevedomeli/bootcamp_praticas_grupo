@@ -18,12 +18,77 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/perolasApi/src/main/java/com/dh/meli/perolas/model/Adress.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/perolasApi/src/main/java/com/dh/meli/perolas/model/Buy.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/perolasApi/src/main/java/com/dh/meli/perolas/model/Client.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/perolasApi/src/main/java/com/dh/meli/perolas/model/Cliente.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/perolasApi/src/main/java/com/dh/meli/perolas/model/Endereco.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/perolasApi/src/main/java/com/dh/meli/perolas/model/Endereço.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/perolasApi/src/main/java/com/dh/meli/perolas/model/JewelDB.java">
           <value>
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/perolasApi/src/main/java/com/dh/meli/perolas/model/Pedido.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/perolasApi/src/main/java/com/dh/meli/perolas/model/Produto.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/perolasApi/src/main/java/com/dh/meli/perolas/model/ProdutosPedido.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/perolasApi/src/main/java/com/dh/meli/perolas/repository/InterfaceProdutoRepository.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/perolasApi/src/main/java/com/dh/meli/perolas/service/InterfaceProdutoService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/perolasApi/src/main/java/com/dh/meli/perolas/service/JewelDBService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/perolasApi/src/main/java/com/dh/meli/perolas/service/ProdutoService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/a.dummy">
           <value>
             <set />
           </value>

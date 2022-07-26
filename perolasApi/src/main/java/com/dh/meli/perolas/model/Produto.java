@@ -9,8 +9,8 @@ import javax.validation.constraints.NotNull;
 
 @Getter @Setter
 @Entity
-@Table(name = "tb_jewel")
-public class JewelDB {
+@Table(name = "produto")
+public class Produto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
