@@ -13,7 +13,32 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/perolasApi/src/main/java/com/dh/meli/perolas/controller/ProdutoController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/perolasApi/src/main/java/com/dh/meli/perolas/exceptions/BadRequestException.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/perolasApi/src/main/java/com/dh/meli/perolas/exceptions/DefautErrorMessage.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/perolasApi/src/main/java/com/dh/meli/perolas/exceptions/Handler.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/perolasApi/src/main/java/com/dh/meli/perolas/exceptions/JewelNotFoundException.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/perolasApi/src/main/java/com/dh/meli/perolas/exceptions/LojaNotFoundException.java">
           <value>
             <set />
           </value>
@@ -68,7 +93,22 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/perolasApi/src/main/java/com/dh/meli/perolas/repository/InterfaceClienteRepository.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/perolasApi/src/main/java/com/dh/meli/perolas/repository/InterfaceProdutoRepository.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/perolasApi/src/main/java/com/dh/meli/perolas/service/ClienteService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/perolasApi/src/main/java/com/dh/meli/perolas/service/InterfaceClienteService.java">
           <value>
             <set />
           </value>
@@ -84,6 +124,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/perolasApi/src/main/java/com/dh/meli/perolas/service/ProdutoService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/perolasApi/src/main/resources/application.properties">
           <value>
             <set />
           </value>

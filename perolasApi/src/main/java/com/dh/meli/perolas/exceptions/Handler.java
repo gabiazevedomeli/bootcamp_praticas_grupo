@@ -9,8 +9,8 @@ import java.time.LocalDateTime;
 
 @ControllerAdvice
 public class Handler {
-    @ExceptionHandler(JewelNotFoundException.class)
-    public ResponseEntity<ExceptionDetails> handlerJewelNotFound(JewelNotFoundException ex) {
+    @ExceptionHandler(LojaNotFoundException.class)
+    public ResponseEntity<ExceptionDetails> handlerJewelNotFound(LojaNotFoundException ex) {
         return new ResponseEntity<>(
                 ExceptionDetails.builder()
                         .title(ex.getMessage())
@@ -20,8 +20,8 @@ public class Handler {
         );
     }
 
-    @ExceptionHandler(JewelBadRequestException.class)
-    public ResponseEntity<ExceptionDetails> handlerJewelBadRequest(JewelBadRequestException ex) {
+    @ExceptionHandler(BadRequestException.class)
+    public ResponseEntity<ExceptionDetails> handlerJewelBadRequest(BadRequestException ex) {
         return new ResponseEntity<>(
                 ExceptionDetails.builder()
                     .title(ex.getMessage())

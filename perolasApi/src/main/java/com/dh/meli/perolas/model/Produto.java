@@ -15,17 +15,17 @@ public class Produto {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotBlank(message = "Material must to be specified.")
-    @Column(name = "material", length = 80, nullable = false)
-    private String material;
+    @NotBlank(message = "É preciso definir o nome do produto")
+    @Column(name = "nome", length = 80, nullable = false)
+    private String nome;
 
-    @NotNull(message = "Weight must to be specified.")
-    @Column(name = "weight", scale = 2, nullable = false)
-    private Double weight;
+    @NotNull(message = "É preciso definir a categoria")
+    @Column(name = "categoria", nullable = false)
+    private String categoria;
 
-    @NotNull(message = "Carats must to be specified.")
-    @Column(name = "carats", nullable = false)
-    private Integer carats;
+    @NotNull(message ="É preciso definir o preço do produto")
+    @Column(name = "preco", scale = 2, nullable = false)
+    private Double preco;
 }
 
 

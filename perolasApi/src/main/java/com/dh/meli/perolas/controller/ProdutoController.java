@@ -13,7 +13,7 @@ import java.util.List;
 @RestController
 @CrossOrigin("*")
 @RequestMapping("/jewels")
-public class JewelDBController {
+public class ProdutoController {
 
     @Autowired
     private ProdutoService produtoService;
@@ -27,7 +27,7 @@ public class JewelDBController {
     public ResponseEntity<Produto> createNewJewel(@RequestBody @Valid Produto newJewel) {
         System.out.println(newJewel);
         System.out.println("Controller");
-        return ResponseEntity.status(HttpStatus.CREATED).body(produtoService.criarProduto(newJewel));
+        return ResponseEntity.status(HttpStatus.CREATED).body(produtoService.criaProduto(newJewel));
     }
 
     @GetMapping

@@ -16,7 +16,7 @@ public class ProdutoService implements InterfaceProdutoService {
 
     @Override
     public Produto getProdutoById(Long id) {
-        return produtoRepo.findById(id).orElseThrow(()-> new JewelNotFoundException("Jewel not found."));
+        return produtoRepo.findById(id).orElseThrow(()-> new LojaNotFoundException("Produto não encontrado."));
     }
 
     @Override
@@ -25,21 +25,21 @@ public class ProdutoService implements InterfaceProdutoService {
     }
 
     @Override
-    public Produto criarProduto(Produto novoProduto) {
+    public Produto criaProduto(Produto novoProduto) {
         if (novoProduto.getId() != null) {
-            throw new JewelBadRequestException("O produto não pode ter id");
+            throw new BadRequestException("O produto não pode ter id.");
         }
         System.out.println(novoProduto);
         return produtoRepo.save(novoProduto);
     }
 
     @Override
-    public Produto atualizarProduto(Long id) {
+    public Produto atualizaProduto(Long id) {
         return null;
     }
 
     @Override
-    public void deleteJewel(Long id) {
+    public void deletaProduto(Long id) {
         if (produtoRepo.findById(id).isPresent()) {
             produtoRepo.deleteById(id);
         }

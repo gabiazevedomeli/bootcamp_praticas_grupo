@@ -10,10 +10,10 @@ public interface InterfaceProdutoService {
 
     List<Produto> getTodosProdutos();
 
-    Produto criarProduto(Produto novoProduto);
+    Produto criaProduto(Produto novoProduto);
 
-    Produto atualizarProduto(Long id);
+    Produto atualizaProduto(Long id);
 
-    void deleteJewel(Long id);
+    void deletaProduto(Long id);
 
 }
